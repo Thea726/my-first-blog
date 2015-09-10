@@ -8,9 +8,20 @@
         </div>
 
         <div>
+        	{% for post in posts %}
+        	<div>
+        	<p>published: {{ post.published_date }}</p>
+        	<h1><a href="">{{ post.title }}</a></h1>
+        	<p>{{ post.text|linebreaks}}</p>
+        </div>
           
-            <h2><a href="">Posty post post</a></h2>
-            <p>Woohooooooooo!!!!!!!!</p>
+            	
+            {% endfor %}
+
+        </div>
+        <div>
+        	<h2><a> pooooooooooost </a></h2>
+        	<p>it's a post!</p>
         </div>
     </body>
 </html>
